@@ -1,0 +1,173 @@
+/*inport font family*/
+/*rubik, lato and playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*========================================== variabels ============================================*/
+
+:root{
+  --themeGreen:#08d565;
+  --themeBlack:#282c34;
+  --themeBlue:#272b44;
+  --DarkNavyBlue: #1f2336;
+  --whiteColor:#fff;
+  --latoFont:'Lato', sans-serif;
+  --rubicFont: 'Rubik', sans-serif;
+  --playFairFont:'Playfair Display', serif;
+}
+
+/*========================================== ./variabels ============================================*/
+/*========================================== common css for all ============================================*/
+
+.themeBlueBg{
+  background: var(--themeBlue);
+}
+.darknavyBg{
+  background: var(--DarkNavyBlue);
+}
+.themeBlueText{
+  color: var(--themeBlue);
+}
+.greenColor{
+  color: var(--themeGreen);
+}
+.navyBorder{
+  border: 1px solid var(--DarkNavyBlue);
+}
+.f600{
+  font-weight:600;
+}
+a{
+  text-decoration: none !important;
+}
+.form-control:focus {
+  color: #212529;
+  background-color: var(--whiteColor);
+  outline: 0;
+  box-shadow: none !important;
+}
+.latoFont{
+  font-family: var(--latoFont);
+}
+.rubicFont{
+  font-family: var(--rubicFont);
+}
+.playfairFont{
+  font-family: var(--playFairFont);
+}
+.italicBold{
+  font-style: italic;
+  font-weight: 600;
+}
+.pointer {cursor: pointer;}
+
+.Centerflex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aroundflex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.betweenflex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.App {
+  text-align: center;
+}
+/*========================================== ./common css for all ============================================*/
+/*========================================== header Css ============================================*/
+
+.logoStyle{
+  font-style: normal;
+  font-weight: 900;
+  color: var(--themeGreen);
+}
+.cartBadge{
+  background: var(--themeGreen) !important;
+  font-size: 10px !important;
+}
+sup{
+  top: -1rem!important;
+  right: 0.45rem !important;
+}
+.HeaderMenu a{
+  color: var(--whiteColor) !important;
+}
+.HeaderMenu a:hover{
+  color: var(--themeGreen) !important;
+  transition-duration: .5s;
+}
+.menuWidth{
+  width: calc(100% - 240px);
+}
+
+/*========================================== ./header Css ============================================*/
+/*========================================== homepage  Css ============================================*/
+
+.portfolioBgImage{
+  background-image: url('./images/homeBg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navyBg{
+  background: var(--DarkNavyBlue);
+}
+.rotateImage{
+  rotate: 351deg !important;
+}
+.mainContent{
+  width: calc(100% - 80px);
+  border: 1px solid var(--DarkNavyBlue);
+}
+.greenStrip{
+  background: url("./images/greenStrip.png") no-repeat ;
+  background-position: right 14% top 0%;
+
+}
+/*========================================== ./homepage  Css ============================================*/
+/*========================================== sidenavigator  Css ============================================*/
+
+.sideNavigator{
+  width: 80px;
+  height: calc(100vh - 160px);
+}
+.socialIconBorder:hover{
+  border:1px solid var(--themeGreen) !important;
+}
+/*========================================== ./sidenavigator  Css ============================================*/
+/*========================================== ./ServicePage Css ============================================*/
+
+.serviceHeadig:hover{
+  color: var(--themeGreen);
+  cursor: pointer;
+}
+.serviceNumber{
+  font-size: 96px;
+  position: absolute;
+  right: 92px;
+  top: -65px;
+  color: #3a3c4c;
+}
+
+/*========================================== ./ServicePage Css ============================================*/
+/*========================================== MyPortfolio Css ============================================*/
+
+/*.site1BgImage{*/
+/*  background-image: url("./images/ss/AllProducts.png");*/
+/*}*/
+/*.site2BgImage{*/
+/*  background-image: url("./images/ss/Ecommerce.png");*/
+/*}*/
+/*.site3BgImage{*/
+/*  background-image: url("./images/ss/Educational.png");*/
+/*}*/
+/*.site4BgImage{*/
+/*  background-image: url("./images/ss/Login.png");*/
+/*}*/
+
+/*========================================== ./MyPortfolio Css ============================================*/
