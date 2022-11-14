@@ -30,6 +30,9 @@
 .greenColor{
   color: var(--themeGreen);
 }
+.greenBgColor{
+  background-color: var(--themeGreen);
+}
 .navyBorder{
   border: 1px solid var(--DarkNavyBlue);
 }
@@ -157,17 +160,28 @@ sup{
 /*========================================== ./ServicePage Css ============================================*/
 /*========================================== MyPortfolio Css ============================================*/
 
-/*.site1BgImage{*/
-/*  background-image: url("./images/ss/AllProducts.png");*/
-/*}*/
-/*.site2BgImage{*/
-/*  background-image: url("./images/ss/Ecommerce.png");*/
-/*}*/
-/*.site3BgImage{*/
-/*  background-image: url("./images/ss/Educational.png");*/
-/*}*/
-/*.site4BgImage{*/
-/*  background-image: url("./images/ss/Login.png");*/
-/*}*/
+.site1BgImage{
+  background-image: url("./images/ss/AllProducts.png");
+  background-size: contain;
+}
 
-/*========================================== ./MyPortfolio Css ============================================*/
+.innerImage{
+  background-image: url("./images/ss/AllProducts.png");
+  height: 300px;
+}
+.innerImage:hover{
+  opacity: .3;
+}
+.outerImage:hover{
+  background-color: var(--themeGreen);
+}
+.outerImage:hover .projectName{
+  display: block;
+}
+.projectName {
+display: none;
+}
+
+
+
+  /*========================================== ./MyPortfolio Css ============================================*/
