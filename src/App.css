@@ -174,6 +174,7 @@ sup{
 }
 .outerImage:hover{
   background-color: var(--themeGreen);
+  transition: .5s;
 }
 .outerImage:hover .projectName{
   display: block;
@@ -183,5 +184,18 @@ display: none;
 }
 
 
-
+.orbitImage{
+  animation: circle 10s linear infinite;
+}
   /*========================================== ./MyPortfolio Css ============================================*/
+  /*========================================== animation Css ============================================*/
+@keyframes circle{
+0%{
+  transform:rotate(0deg)
+}
+100%{
+  transform:rotate(360deg)
+}
+}
+
+  /*========================================== ./animation Css ============================================*/
