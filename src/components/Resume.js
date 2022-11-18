@@ -2,11 +2,22 @@ import React from "react";
 import Table from 'react-bootstrap/Table';
 
 export default function Resume(props) {
-    const post = [{year:2022, designnation:'Web Developer', Company:'GBTech'},
-        {year:2021, designnation:'Jr. Web Developer', Company:'GBTech'},{year:2022, designnation:'Web Developer', Company:'GBTech'},{year:2022, designnation:'Web Developer', Company:'GBTech'},{year:2022, designnation:'Web Developer', Company:'GBTech'},
-
+    const post = [
+      {year:2022, designnation:'Web Developer', Company:'GBTech'},
+      {year:2022, designnation:'Student', Company:'Complete Bsc CS'},
+      {year:2021, designnation:'Jr. Web Developer', Company:'GBTech'}
 
     ]
+    const designnationList = post.map((value, index)=>{
+      return   <tr>
+            <td><h4 className="greenColor">{value.year}</h4></td>
+            <td>
+                <h4>{value.designnation}</h4>
+                <h6>{value.Company}</h6>
+            </td>
+
+        </tr>
+    })
     return (
         <>
             <div className="container-fluid darknavyBg">
@@ -17,23 +28,23 @@ export default function Resume(props) {
                         <h1 className='mb-5 playfairFont pt-2 text-center text-white'><b>My Resume</b></h1>
                         <div className="row">
                             <div className="col-6">
-                                <div className="skills d-none">
-                                    <div className="react">
+                                <div className="skills ">
+                                    <div className="react position-absolute">
                                         <img src={props.react} alt=""/>
                                         <h4 className='text-white'>70%</h4>
                                     </div>
-                                    <div className="HTML">
-                                        <img src={props.html} alt=""/>
-                                        <h4 className='text-white'>70%</h4>
-                                    </div>
-                                    <div className="CSS">
-                                        <img src={props.css} alt=""/>
-                                        <h4 className='text-white'>60%</h4>
-                                    </div>
-                                    <div className="Wordpress">
-                                        <img src={props.js} alt=""/>
-                                        <h4 className='text-white'>60%</h4>
-                                    </div>
+                                     {/* <div className="HTML">
+                                    //     <img src={props.html} alt=""/>
+                                    //     <h4 className='text-white'>70%</h4>
+                                    // </div>
+                                    // <div className="CSS">
+                                    //     <img src={props.css} alt=""/>
+                                    //     <h4 className='text-white'>60%</h4>
+                                    // </div>
+                                    // <div className="Wordpress">
+                                    //     <img src={props.js} alt=""/>
+                                    //     <h4 className='text-white'>60%</h4>
+                                    // </div> */}
                                 </div>
                                 <div className="html">
                                     <img src="" alt=""/>
@@ -42,35 +53,13 @@ export default function Resume(props) {
                             </div>
                             <div className="col-6 text-white">
 
-
                                 <Table borderless className='playfairFont' style={{color: "white"}}>
 
                                     <tbody>
-                                    <tr>
-                                        <td><h4>2022</h4></td>
-                                        <td>
-                                            <h3>Web Developer</h3>
-                                            <h6>GBTech</h6>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td colSpan={2}>Larry the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    {designnationList}
                                     </tbody>
                                 </Table>
-                                );
-                                }
 
-                                export default BasicExample;
                             </div>
                         </div>
                     </div>
