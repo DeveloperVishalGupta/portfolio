@@ -11,7 +11,7 @@ export default function MyFortfolio(props) {
         {name: 'Ecovis', class: 'site4BgImage', image: props.ss4}
     ];
     const ProjectDiv = ProjectArray.map((v, i) => {
-        return <div className="col-md-6 mb-3 " style={{height: "50vh"}}>
+        return <div className="col-md-6 mb-3 " key={i} style={{height: "50vh"}}>
             <div className="outerImage rounded-2 w-100 mx-auto position-relative">
                 <div className="innerImage rounded-2 w-100"></div>
                 <div className="position-absolute projectName" style={{bottom: '10%', left: '5%'}}>

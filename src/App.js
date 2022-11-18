@@ -21,10 +21,12 @@ import websiteSS2 from './images/ss/Ecommerce.png';
 import websiteSS3 from './images/ss/Educational.png';
 import websiteSS4 from './images/ss/Login.png';
 import resumeImage from './images/resumeAnime.png';
-import reactIcon from './images/reactjs.png';
-import htmlIcon from './images/html5.png';
-import jsIcon from './images/javascript.png';
-import cssIcon from './images/css3.png';
+import reactIcon from './iconImages/react.png';
+import htmlIcon from './iconImages/html.png';
+import cssIcon from './iconImages/css.png';
+import wordpressIcon from './iconImages/wordpress.png';
+import bootstrapIcon from './iconImages/boostrap.png';
+
 
 // import icons
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -38,7 +40,7 @@ function App() {
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck}  intsaIcon={faInstagram} Github={faGithub} linkedIn={faLinkedinIn} ></Home>
             <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
             <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4}/>
-            <Resume resumeImage={resumeImage} react={reactIcon} html={htmlIcon} js={jsIcon} css={cssIcon}/>
+            <Resume resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon} css={cssIcon}/>
         </>
     );
 }

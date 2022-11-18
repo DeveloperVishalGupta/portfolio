@@ -6,8 +6,8 @@ import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 export default function SideSocialNavigator() {
     const SocialIcons = [faFacebookF, faInstagram, faGithub, faLinkedinIn, faTwitter]
-    const iconList = SocialIcons.map((value) => {
-        return <li className='border socialIconBorder border-secondary mb-2 px-2 py-1 rounded-1'>
+    const iconList = SocialIcons.map((value, index) => {
+        return <li key={index} className='border socialIconBorder border-secondary mb-2 px-2 py-1 rounded-1'>
             <FontAwesomeIcon icon={value} size='xl'/>
         </li>
     })

@@ -15,12 +15,13 @@
               discription: 'We Build Websites For Your Needs. Whether you\'re a business, organization, or an individual looking for a website.'
           }]
       const services = serviceData.map((value, index) => {
-          return <div className="col-md-6 ">
+          return <div className="col-md-6 " key={index}>
               <div className="text-start px-4 position-relative">
                   <div className="serviceNumber playfairFont">0{index +1}</div>
                   <div className='Centerflex border text-dark mb-2 bg-white rounded-circle' style={{width: '53px', height: '53px'}}>
                       <FontAwesomeIcon icon={value.image} size='xl'/>
                   </div>l̥
+                  <h2 className='serviceHeadig'>{value.name}</h2>
                   <h2 className='serviceHeadig'>{value.name}</h2>
                   <p className='latoFont'>{value.discription}</p>
               </div>
