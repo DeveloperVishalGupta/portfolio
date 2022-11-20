@@ -7,106 +7,80 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 
 export default function Resume(props) {
+    const options = {
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        },
+        // navText: ["<div class='align-items-center d-flex justify-content-center px-2 nav-btn prev-slide prenavigate'> <FontAwesomeIcon icon={props.leftArrow} size='xl'/></div>", "<div class='align-items-center d-flex justify-content-center px-2 nav-btn next-slide postnavigate'> <FontAwesomeIcon icon={props.rightArrow} size='xl'/></div>"],
+
+        // navText: ["<div class='align-items-center d-flex justify-content-center px-2 nav-btn prev-slide prenavigate'> <i class='fa-solid fa-caret-left'></i></div>", "<div class='align-items-center d-flex justify-content-center px-2 nav-btn next-slide postnavigate'> <i class='fa-solid fa-caret-right'></i></div>"],
+    };
+    const OwlCarouselData = [
+        {image: props.react, Knowledge: '60%', shoetDetail: '', Link: ''},
+        {image: props.html, Knowledge: '60%', shoetDetail: '', Link: ''},
+        {image: props.css, Knowledge: '60%',shoetDetail: '',Link: ''},
+        {image: props.wp, Knowledge: '60%', shoetDetail: '', Link: ''},
+        {image: props.bts,Knowledge: '60%',shoetDetail: '',Link: ''},
+    ]
     const post = [
         {year: 2022, designnation: 'Web Developer', Company: 'GBTech'},
-        {year: 2022, designnation: 'Student', Company: 'Complete Bsc CS'},
+        {year: 2022, designnation: 'Graduated', Company: 'Complete Bsc CS'},
         {year: 2021, designnation: 'Jr. Web Developer', Company: 'GBTech'}
 
     ]
     const designnationList = post.map((value, index) => {
         return <tr key={index}>
-            <td><h4 className="greenColor">{value.year}</h4></td>
-            <td>
-                <h4>{value.designnation}</h4>
-                <h6>{value.Company}</h6>
-            </td>
+            <td><h3 className="greenColor">{value.year}</h3></td>
+            <th>
+                <h3>{value.designnation}</h3>
+                <h5>{value.Company}</h5>
+            </th>
 
         </tr>
+    });
+    const OwlCarouselDataHTML = OwlCarouselData.map((value, index)=>{
+        return <div className='item' key={index}>
+            <div className="SkillCard">
+                <div className="drop" style={{color: '#ff0f5b'}}>
+                    <div className="content">
+                        <div className="cartHeading">
+                            <img src={value.image} className='' style={{height: '60%', width:'auto'}} alt=""/>
+                        </div>
+                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Consequatur, ipsa.।</p>
+                        <a href="./" className="readMoreLink">Read more..</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     })
     return (
         <>
             <div className="container-fluid " style={{color: '#eff0f4'}}>
                 <div className="row justify-content-center">
-                    <div className="col-md-10">
+                    <div className="col-md-12">
                         <h2 className='greenColor pb-2 pt-5 rubicFont text-capitalize text-center'>SKILL &
                             EXPERIENCE</h2>
-                        <h1 className='mb-5 playfairFont pt-2 text-center text-white'><b>My Resume</b></h1>
-                        <div className="row">
-                            <OwlCarousel autoPlay items='3' className='owl-theme' loop margin={10} nav>
-                                <div class='item'>
-                                    <img src={props.css} alt=""/>
-                                </div>
-                                <div class='item'>
-                                    <img src={props.html} alt=""/>
-                                </div>
-                                <div class='item'>
-                                    <img src={props.react} alt=""/>
-                                </div>
-                                <div class='item'>
-                                    <img src={props.bts} alt=""/>
-                                </div>
-                                <div class='item'>
-                                    <img src={props.resumeImage} alt=""/>
-                                </div>
-                                <div class='item'>
-                                    <img src={props.wp} alt=""/>
-                                </div>
-                            </OwlCarousel>;
-                            <div className="col-md-4">
-                                <div className="SkillCard">
-                                    <div className="drop" style={{color: '#ff0f5b'}}>
-                                        <div className="content">
-                                            <div className="cartHeading">
-                                                <img src={props.react} className='' style={{height: '60%'}} alt=""/>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Consequatur, ipsa.।</p>
-                                            <a href="./" className="readMoreLink">Read more..</a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <h1 className='playfairFont text-center themeBlueText'><b>My Resume</b></h1>
+                        <div className="align-items-center row">
+                            <div className="col-md-8">
+                                <OwlCarousel nav='false' dots='false' autoplay='true'  loop className='SkillCardCarousel' {...options}>
+                                    {OwlCarouselDataHTML}
+                                </OwlCarousel>;
                             </div>
-                            <div className="col-md-4">
-                                <div className="SkillCard">
-                                    <div className="drop" style={{color: '#ff0f5b'}}>
-                                        <div className="content">
-                                            <div className="cartHeading">
-                                                <img src={props.html} className='' style={{height: '60%'}} alt=""/>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Consequatur, ipsa.।</p>
-                                            <a href="./" className="readMoreLink">Read more..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4">
-                                <div className="SkillCard">
-                                    <div className="drop" style={{color: '#ff0f5b'}}>
-                                        <div className="content">
-                                            <div className="cartHeading">
-                                                <img src={props.css} className='' style={{height: '60%'}} alt=""/>
-                                                <img src="" alt=""/>
-                                            </div>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                Consequatur, ipsa.।</p>
-                                            <a href="./" className="readMoreLink">Read more..</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-6">
-
-                                <div className="html">
-                                    <img src="" alt=""/>
-                                </div>
-                                <img src={props.resumeImage} className='orbitImage' alt=""/>
-                            </div>
-                            <div className="col-6 text-white">
+                            <div className="col-md-4 text-white">
 
                                 <Table borderless className='playfairFont' style={{color: "white"}}>
 
-                                    <tbody>
+                                    <tbody  className='text-dark'>
                                     {designnationList}
                                     </tbody>
                                 </Table>
@@ -116,19 +90,6 @@ export default function Resume(props) {
                     </div>
                 </div>
             </div>
-            {/*<div className="container-fluid darknavyBg">*/}
-            {/*    <div className="row ">*/}
-            {/*        <div className="col-5">*/}
-            {/*            <div className="Skills position-relative">*/}
-            {/*                <div className="HTMLSkill">*/}
-            {/*                    <img src="" alt=""/>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*            */}
-            {/*        </div>*/}
-            {/*        <div className="col-7"></div>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
         </>
     )
 }

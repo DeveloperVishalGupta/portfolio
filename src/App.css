@@ -269,8 +269,8 @@ display: none;
 }
 .cartHeading{
   position: relative;
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   background: #eff0f4;
   border-radius: 50%;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.01), inset -2px -5px 10px rgba(255, 255, 255, 1), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
@@ -283,8 +283,10 @@ display: none;
 }
 .readMoreLink{
   position: relative;
-  padding: 10px 25px;
+  padding: 6px 18px;
   background-color: var(--clr);
+  background-color: #ff0f5b;
+
   text-decoration: none;
   color: white;
   border-radius: 25px;
@@ -295,6 +297,7 @@ display: none;
 }
 .readMoreLink:hover{
   opacity: 1;
+  color:white !important;
 }
 .readMoreLink::before{
   content: '';
@@ -307,4 +310,11 @@ display: none;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.5);
 }
-
+.SkillCardCarousel .owl-nav button{
+  background: red;
+  border: 1px solid red;
+  padding: 10px;
+}
+.SkillCard .drop:nth-child(1){
+  border-radius:41% 59% 45% 55% / 42% 52% 48% 58% ;
+}

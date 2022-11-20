@@ -10,6 +10,7 @@ import Header from './components/Header.js';
 import ServicesPage from "./components/ServicesPage";
 import MyFortfolio from "./components/MyPortfolio";
 import Resume from "./components/Resume";
+import FeedBack from "./components/FeedBack";
 
 // import images 
 import greenStrip from './images/greenStrip.png';
@@ -26,21 +27,36 @@ import htmlIcon from './iconImages/html.png';
 import cssIcon from './iconImages/css.png';
 import wordpressIcon from './iconImages/wordpress.png';
 import bootstrapIcon from './iconImages/boostrap.png';
+import Quote from './images/quate.png';
+import QuoteImage from './images/quateImage.png';
+import FeedbackImage from './images/FeedBack.png';
 
 
 // import icons
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEllipsisVertical, faMagnifyingGlass, faCartShopping, faLaptopCode, faPencilSquare,faCircleCheck} from '@fortawesome/free-solid-svg-icons';
+import {
+    faEllipsisVertical,
+    faMagnifyingGlass,
+    faCartShopping,
+    faLaptopCode,
+    faPencilSquare,
+    faCircleCheck,
+    faCaretRight,
+    faCaretLeft
+} from '@fortawesome/free-solid-svg-icons';
 import {faInstagram, faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
 
 function App() {
     return (
         <>
             <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping}/>
-            <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck}  intsaIcon={faInstagram} Github={faGithub} linkedIn={faLinkedinIn} ></Home>
-            <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
+            <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
+                  Github={faGithub} linkedIn={faLinkedinIn}></Home>
+            <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare}/>
             <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4}/>
-            <Resume resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon} css={cssIcon}/>
+            <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
+                    css={cssIcon}/>
+            <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage}/>
         </>
     );
 }
