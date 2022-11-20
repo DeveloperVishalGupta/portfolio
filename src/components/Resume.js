@@ -19,9 +19,6 @@ export default function Resume(props) {
                 items:2
             }
         },
-        // navText: ["<div class='align-items-center d-flex justify-content-center px-2 nav-btn prev-slide prenavigate'> <FontAwesomeIcon icon={props.leftArrow} size='xl'/></div>", "<div class='align-items-center d-flex justify-content-center px-2 nav-btn next-slide postnavigate'> <FontAwesomeIcon icon={props.rightArrow} size='xl'/></div>"],
-
-        // navText: ["<div class='align-items-center d-flex justify-content-center px-2 nav-btn prev-slide prenavigate'> <i class='fa-solid fa-caret-left'></i></div>", "<div class='align-items-center d-flex justify-content-center px-2 nav-btn next-slide postnavigate'> <i class='fa-solid fa-caret-right'></i></div>"],
     };
     const OwlCarouselData = [
         {image: props.react, Knowledge: '60%', shoetDetail: '', Link: ''},
