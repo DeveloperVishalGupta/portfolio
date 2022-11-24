@@ -17,7 +17,7 @@ export default function Home(props) {
                             </div>
 
                             <div className="col-md-7 text-white playfairFont">
-                                <h1 style={{fontSize: '2.3rem'}} className='greenColor'>--Hello Dear</h1>
+                                <h1 style={{fontSize: '2.3rem'}} className='greenColor'>--Hello Everyone</h1>
                                 <h1 style={{fontSize: '4rem'}}><b>I'm Vishal Gupta</b></h1>
                                 <h1 style={{fontSize: '4.5rem'}} className='greenColor'>Web Developer</h1>
                             </div>
