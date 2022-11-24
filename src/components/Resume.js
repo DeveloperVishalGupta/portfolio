@@ -71,7 +71,7 @@ export default function Resume(props) {
                             <div className="col-md-8">
                                 <OwlCarousel nav='false' dots='false' autoplay='true'  loop className='SkillCardCarousel' {...options}>
                                     {OwlCarouselDataHTML}
-                                </OwlCarousel>;
+                                </OwlCarousel>
                             </div>
                             <div className="col-md-4 text-white">
 

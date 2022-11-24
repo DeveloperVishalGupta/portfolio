@@ -2,6 +2,8 @@ import React from "react";
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+
 
 export default function FeedBack(props) {
     const feedbackArray = [{
@@ -15,7 +17,7 @@ export default function FeedBack(props) {
 
     const feedbackHtml = feedbackArray.map((value, index) => {
         return <div className="item">
-            <div className="align-items-center row border">
+            <div className="align-items-center row">
                 <div className="col-md-5">
                     <img src={props.image} className='w-100' alt=""/>
                 </div>
@@ -34,23 +36,28 @@ export default function FeedBack(props) {
             </div>
         </div>
     })
+    const pre_icons =<FontAwesomeIcon className='greenColor' icon={props.leftArrow} size='xl'/> 
+    const next_icons =<FontAwesomeIcon className='greenColor' icon={props.rightArrow} size='xl'/>  
     const options = {
         responsive: {
             0: {
                 items: 1
             }
-        }
+        },
+        navText: ["<div class='align-items-center d-flex justify-content-center nav-btn prenavigate prev-slide rounded-circle'><</div>", "<div class='align-items-center d-flex justify-content-center nav-btn prev-slide rounded-circle postnavigate'> ></div>"],
+
     }
     return (
         <>
-            <div className="align-items-center container-md-fluid d-flex darknavyBg position-relative text-white"
+            <div className="d-flex darknavyBg flex-column justify-content-around pb-4 text-white"
                  style={{minHeight: '100vh'}}>
                 <div className="justify-content-around row mx-0">
                     <div className="col-md-11">
                         <OwlCarousel nav='false' dots='false' autoplay='false' loop
                                      className='FeedbackCarousel' {...options}>
                             {feedbackHtml}
-                        </OwlCarousel>;
+                        </OwlCarousel>
+                        <img src={props.VG} className='' alt=""/>
                     </div>
                 </div>
             </div>

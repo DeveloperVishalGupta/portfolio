@@ -32,7 +32,7 @@ export default function MyFortfolio(props) {
                             {ProjectDiv}
                             <div className="text-center mb-4">
                                 <Button className='greenBgColor border-success' style={{letterSpacing: '.5px'}}><b>View
-                                    More</b></Button>{' '}
+                                    More</b></Button>
                             </div>
                         </div>
                     </div>

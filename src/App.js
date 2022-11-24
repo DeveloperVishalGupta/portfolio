@@ -44,19 +44,19 @@ import {
     faCaretRight,
     faCaretLeft
 } from '@fortawesome/free-solid-svg-icons';
-import {faInstagram, faGithub, faLinkedinIn} from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 function App() {
     return (
         <>
-            <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping}/>
+            <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
-                  Github={faGithub} linkedIn={faLinkedinIn}></Home>
-            <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare}/>
-            <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4}/>
+                Github={faGithub} linkedIn={faLinkedinIn} />
+            <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
+            <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
-                    css={cssIcon}/>
-            <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage}/>
+                css={cssIcon} />
+            <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
         </>
     );
 }
