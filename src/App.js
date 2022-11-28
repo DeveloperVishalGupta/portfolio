@@ -11,6 +11,7 @@ import ServicesPage from "./components/ServicesPage";
 import MyFortfolio from "./components/MyPortfolio";
 import Resume from "./components/Resume";
 import FeedBack from "./components/FeedBack";
+import ConnectUs from "./components/ConnectUs";
 
 // import images 
 import greenStrip from './images/greenStrip.png';
@@ -46,6 +47,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
+// constant text
+const ConnectUsHeading = 'Vishal Is every Day here  for you. Contact us and stay in touch';
+
 function App() {
     return (
         <>
@@ -57,7 +61,8 @@ function App() {
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
                 css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
-        </>
+            <ConnectUs Heading={ConnectUsHeading}/>
+            </>
     );
 }
 
