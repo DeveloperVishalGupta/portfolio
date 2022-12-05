@@ -13,7 +13,7 @@ export default function SideSocialNavigator() {
     })
     return (
         <>
-            <div className="themeBlueBg">
+            <div className="themeBlueBg d-none d-md-block">
                 <div className="themeBlueBg navyBorder sideNavigator Centerflex">
                     <ul className='list-unstyled text-center text-secondary'>
                         {iconList}

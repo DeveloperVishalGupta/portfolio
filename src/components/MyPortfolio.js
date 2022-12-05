@@ -13,9 +13,11 @@ export default function MyFortfolio(props) {
     const ProjectDiv = ProjectArray.map((v, i) => {
         return <div className="col-md-6 mb-3 " key={i} style={{height: "50vh"}}>
             <div className="outerImage rounded-2 w-100 mx-auto position-relative">
-                <div className="innerImage rounded-2 w-100"></div>
+                <div className="innerImage rounded-2 w-100">
+                    <img src={v.image} className='w-100' alt=""/>
+                </div>
                 <div className="position-absolute projectName" style={{bottom: '10%', left: '5%'}}>
-                    <h1 className='playfairFont'>{v.name}</h1>
+                    <h1 className='playfairFont '>{v.name}</h1>
                     <h5>Project {i + 1}</h5>
                 </div>
             </div>
@@ -27,7 +29,7 @@ export default function MyFortfolio(props) {
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <h2 className='greenColor pb-2 pt-5 rubicFont text-capitalize text-center'>latest work</h2>
-                        <h1 className='mb-5 playfairFont pt-2 text-center text-white'><b>My Portfolio</b></h1>
+                        <h1 className='mb-5 playfairFont pt-2 text-center text-white Portfolio'><b>My Portfolio</b></h1>
                         <div className="row">
                             {ProjectDiv}
                             <div className="text-center mb-4">

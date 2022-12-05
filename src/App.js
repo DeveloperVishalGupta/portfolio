@@ -48,7 +48,8 @@ import {
 import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 // constant text
-const ConnectUsHeading = 'Vishal Is every Day here  for you. Contact us and stay in touch';
+const ConnectUsHeadingLine1 = 'Vishal Is every Day here  for you.';
+const ConnectUsHeadingLine2 = 'Contact us and stay in touch';
 
 function App() {
     return (
@@ -61,7 +62,7 @@ function App() {
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
                 css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
-            <ConnectUs Heading={ConnectUsHeading}/>
+            <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
             </>
     );
 }

@@ -12,19 +12,19 @@ export default function Home(props) {
                     <div className=" w-100 " >
                         <div className="row mx-0 darknavyBg h-100 pb-4 position-relative align-items-center">
 
-                            <div className="greenStrip position-absolute w-100 h-100" style={{top: 0}}>
+                            <div className="greenStrip d-none d-md-block position-absolute w-100 h-100" style={{top: 0}}>
 
                             </div>
 
-                            <div className="col-md-7 text-white playfairFont">
-                                <h1 style={{fontSize: '2.3rem'}} className='greenColor'>--Hello Everyone</h1>
-                                <h1 style={{fontSize: '4rem'}}><b>I'm Vishal Gupta</b></h1>
-                                <h1 style={{fontSize: '4.5rem'}} className='greenColor'>Web Developer</h1>
+                            <div className="col-md-7 col-12 text-white playfairFont">
+                                <h1 style={{fontSize: '2.3rem'}} className='greenColor HelloEveryOne'>--Hello Everyone</h1>
+                                <h1 style={{fontSize: '4rem'}} className='DeveloperName'><b>I'm Vishal Gupta</b></h1>
+                                <h1 style={{fontSize: '4.5rem'}} className='greenColor Degination'>Web Developer</h1>
                             </div>
                             <div className="col-md-5 ">
                                 <div className="position-relative text-center text-lg-start">
                                     <img src={props.VG} className='' alt=""/>
-                                    <div className="TotalProject bg-white position-absolute px-3 py-3 rounded rubicFont"
+                                    <div className="TotalProject bg-white position-absolute  px-3 py-3 rounded rubicFont"
                                          style={{left: '-42%', bottom: '7%'}}>
                                         <div className="position-absolute" style={{left: '115px', top:'44px'}}>
                                             <FontAwesomeIcon className='greenColor' icon={props.circelCheck} size='xl'/>

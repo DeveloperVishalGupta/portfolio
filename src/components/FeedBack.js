@@ -44,7 +44,7 @@ export default function FeedBack(props) {
     })
     return (
         <>
-            <div className="border container-fluid d-flex darknavyBg flex-column justify-content-around text-white" style={{minHeight: '100vh'}}>
+            <div className="container-fluid d-flex darknavyBg flex-column justify-content-around text-white" style={{minHeight: '100vh'}}>
                 <OwlCarousel {...options} autoplay='true' loop nav >
                     {feedbackHtml}
                 </OwlCarousel>
