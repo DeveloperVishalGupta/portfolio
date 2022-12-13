@@ -19,7 +19,7 @@ export default function ConnectUs(props) {
                      }}>
                     <img src={value.image} alt="" style={{width: '65%'}}/>
                 </div>
-                <div className="">
+                <div className="" style={{width:`calc(100% - 92px);`}}>
                     <h3 className='border-bottom' style={{
                         fontWeight: 700,
                         letterSpacing: '1px',
@@ -42,31 +42,7 @@ export default function ConnectUs(props) {
                         <p>It is a long established fact that a reader will be distracted by the readable </p>
                         <p>content of a page when looking at its layout.</p>
                         <div className="row justify-content-center">
-                            <div className="col-11 border rounded-3">
                                 {connectStructure}
-                                {/*<div className="col-md-4 playfairFont">*/}
-                                {/*    <div className="d-flex justify-content-around">*/}
-                                {/*        <div className="align-items-center d-flex justify-content-center rounded-circle"*/}
-                                {/*             style={{*/}
-                                {/*                 background: '#434764',*/}
-                                {/*                 width: '75px',*/}
-                                {/*                 height: '75px',*/}
-                                {/*             }}>*/}
-                                {/*            <img src={callIconImage} alt="" style={{width: '65%'}}/>*/}
-                                {/*        </div>*/}
-                                {/*        <div className="">*/}
-                                {/*            <h3 className='border-bottom' style={{*/}
-                                {/*                fontWeight: 700,*/}
-                                {/*                letterSpacing: '1px',*/}
-                                {/*                paddingBottom: '8px',*/}
-                                {/*                borderBottom: '2px solid green',*/}
-                                {/*            }}>Call Us.</h3>*/}
-                                {/*            <h5></h5>*/}
-                                {/*        </div>*/}
-                                {/*    </div>*/}
-
-                                {/*</div>*/}
-                            </div>
                         </div>
                         <h1 className='playfairFont text-center text-white'><b>{props.HeadingLine2}</b></h1>
                         <div className="">
