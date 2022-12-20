@@ -28,7 +28,7 @@ export default function FeedBack(props) {
         }];
 
     const feedbackHtml = feedbackArray.map((value, index) => {
-        return <div className="item">
+        return <div className="item" key={index}>
             <div className="row align-items-center position-relative ">
                 <div className="col-md-5">
                     <img src={props.image} className='w-100' alt=""/>

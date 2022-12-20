@@ -12,6 +12,7 @@ import MyFortfolio from "./components/MyPortfolio";
 import Resume from "./components/Resume";
 import FeedBack from "./components/FeedBack";
 import ConnectUs from "./components/ConnectUs";
+import Footer from "./components/Footer";
 
 // import images 
 import greenStrip from './images/greenStrip.png';
@@ -49,7 +50,7 @@ import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-sv
 
 // constant text
 const ConnectUsHeadingLine1 = 'Vishal Is every Day here  for you.';
-const ConnectUsHeadingLine2 = 'Contact us and stay in touch';
+const ConnectUsHeadingLine2 = '';
 
 function App() {
     return (
@@ -63,6 +64,7 @@ function App() {
                 css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
             <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
+            <Footer/>
             </>
     );
 }
