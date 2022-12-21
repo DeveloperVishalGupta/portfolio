@@ -14,6 +14,8 @@ import FeedBack from "./components/FeedBack";
 import ConnectUs from "./components/ConnectUs";
 import Footer from "./components/Footer";
 
+import AboutMe from "./components/AboutMe";
+
 // import images 
 import greenStrip from './images/greenStrip.png';
 import VishalGupta from './images/vishalGupta.png';
@@ -56,6 +58,7 @@ function App() {
     return (
         <>
             <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />
+            <AboutMe/>
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
                 Github={faGithub} linkedIn={faLinkedinIn} />
             <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
