@@ -12,6 +12,7 @@ import MyFortfolio from "./components/MyPortfolio";
 import Resume from "./components/Resume";
 import FeedBack from "./components/FeedBack";
 import ConnectUs from "./components/ConnectUs";
+import NewComponent from "./Component/NewComponent";
 
 // import images 
 import greenStrip from './images/greenStrip.png';
@@ -49,20 +50,21 @@ import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-sv
 
 // constant text
 const ConnectUsHeadingLine1 = 'Vishal Is every Day here  for you.';
-const ConnectUsHeadingLine2 = 'Contact us and stay in touch';
+const ConnectUsHeadingLine2 = '';
 
 function App() {
     return (
         <>
-            <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />
-            <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
-                Github={faGithub} linkedIn={faLinkedinIn} />
-            <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
-            <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
-            <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
-                css={cssIcon} />
-            <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
-            <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
+            {/*<Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />*/}
+            <NewComponent/>
+            {/*<Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}*/}
+            {/*    Github={faGithub} linkedIn={faLinkedinIn} />*/}
+            {/*<ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />*/}
+            {/*<MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />*/}
+            {/*<Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}*/}
+            {/*    css={cssIcon} />*/}
+            {/*<FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />*/}
+            {/*<ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>*/}
             </>
     );
 }

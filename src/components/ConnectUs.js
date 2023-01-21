@@ -8,18 +8,19 @@ export default function ConnectUs(props) {
     const connectArray = [{image:callIconImage, ContactName:'Call Us.', ConnectWith:'+91 9320206598'},
         {image:emailIconImage, ContactName:'Email.', ConnectWith:'vishalguptaramasare@gmail.com'},
         {image:locationIconImage, ContactName:'Location.', ConnectWith:'216 B wing Lallubhi Compound MAnkhurd, Mumbai'}];
+
     const connectStructure = connectArray.map((value, index)=>{
         return  <div className="col-md-4 playfairFont" key={index}>
-            <div className="d-flex justify-content-around">
-                <div className="align-items-center d-flex justify-content-center rounded-circle"
+            <div className="d-flex ">
+                <div className="align-items-center d-flex justify-content-center rounded-circle me-3"
                      style={{
                          background: '#434764',
                          width: '75px',
                          height: '75px',
                      }}>
-                    <img src={value.image} alt="" style={{width: '65%'}}/>
+                    <img src={value.image} alt="" style={{width: '60%'}}/>
                 </div>
-                <div className="" style={{width:`calc(100% - 92px);`}}>
+                <div className="w-75" style={{width:`calc(100% - 92px);`}}>
                     <h3 className='border-bottom' style={{
                         fontWeight: 700,
                         letterSpacing: '1px',
@@ -39,16 +40,16 @@ export default function ConnectUs(props) {
                     <div className="col-md-12">
 
                         <h1 className='playfairFont '><b>Get In <span className='greenColor'>Touch.</span></b></h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable </p>
+                        <p className='mb-1'>It is a long established fact that a reader will be distracted by the readable </p>
                         <p>content of a page when looking at its layout.</p>
-                        <div className="row justify-content-center">
+                        <div className="border border-2 mx-5 px-2 pt-5 pb-4 rounded-4 row">
                                 {connectStructure}
                         </div>
-                        <h1 className='playfairFont text-center text-white'><b>{props.HeadingLine2}</b></h1>
-                        <div className="">
-                            <input type="email" className='form-control'/>
-                            <button type='button' className='btn btn-light'>Send E-mail</button>
-                        </div>
+                        <h1 className='playfairFont mt-5 mb-4 text-center text-white'><b>Contact us and <span className='greenColor'>stay in touch</span></b></h1>
+                        {/*<div className="">*/}
+                        {/*    <input type="email" className='form-control'/>*/}
+                        {/*    <button type='button' className='btn btn-light'>Send E-mail</button>*/}
+                        {/*</div>*/}
                     </div>
                 </div>
             </div>

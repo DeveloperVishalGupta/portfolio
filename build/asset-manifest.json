@@ -1,24 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.54ded6ac.css",
-    "main.js": "/static/js/main.64053620.js",
-    "static/js/787.29038737.chunk.js": "/static/js/787.29038737.chunk.js",
-    "static/media/homeBg.jpg": "/static/media/homeBg.81b3febc4d2b835a2685.jpg",
-    "static/media/Ecommerce.png": "/static/media/Ecommerce.cf5e5ca54b9e5c62fb80.png",
-    "static/media/Login.png": "/static/media/Login.bd9ec2283fef16883c83.png",
-    "static/media/AllProducts.png": "/static/media/AllProducts.8c34c40d2d9ea3304986.png",
-    "static/media/vishalGupta.png": "/static/media/vishalGupta.c5026be2c20478cafd8b.png",
-    "static/media/Educational.png": "/static/media/Educational.b6198ccea9d6b0110d9c.png",
-    "static/media/Development.webp": "/static/media/Development.f1748d630fb4f7b9ce83.webp",
-    "static/media/webdevelopemnet.jpg": "/static/media/webdevelopemnet.7c8b17ce3b57007ee865.jpg",
-    "static/media/greenStrip.png": "/static/media/greenStrip.3a468f4cd49dd38debe7.png",
-    "index.html": "/index.html",
-    "main.54ded6ac.css.map": "/static/css/main.54ded6ac.css.map",
-    "main.64053620.js.map": "/static/js/main.64053620.js.map",
-    "787.29038737.chunk.js.map": "/static/js/787.29038737.chunk.js.map"
+    "main.css": "/vishalportfolio/static/css/main.2a95d31c.css",
+    "main.js": "/vishalportfolio/static/js/main.93cb4241.js",
+    "static/js/787.29038737.chunk.js": "/vishalportfolio/static/js/787.29038737.chunk.js",
+    "static/media/homeBg.jpg": "/vishalportfolio/static/media/homeBg.81b3febc4d2b835a2685.jpg",
+    "static/media/Ecommerce.png": "/vishalportfolio/static/media/Ecommerce.cf5e5ca54b9e5c62fb80.png",
+    "static/media/Login.png": "/vishalportfolio/static/media/Login.bd9ec2283fef16883c83.png",
+    "static/media/AllProducts.png": "/vishalportfolio/static/media/AllProducts.8c34c40d2d9ea3304986.png",
+    "static/media/vishalGupta.png": "/vishalportfolio/static/media/vishalGupta.c5026be2c20478cafd8b.png",
+    "static/media/Educational.png": "/vishalportfolio/static/media/Educational.b6198ccea9d6b0110d9c.png",
+    "static/media/Development.webp": "/vishalportfolio/static/media/Development.f1748d630fb4f7b9ce83.webp",
+    "static/media/webdevelopemnet.jpg": "/vishalportfolio/static/media/webdevelopemnet.7c8b17ce3b57007ee865.jpg",
+    "static/media/quateImage.png": "/vishalportfolio/static/media/quateImage.3797f402927b53940d56.png",
+    "static/media/boostrap.png": "/vishalportfolio/static/media/boostrap.6fda956b350aea84d197.png",
+    "static/media/greenStrip.png": "/vishalportfolio/static/media/greenStrip.3a468f4cd49dd38debe7.png",
+    "static/media/react.png": "/vishalportfolio/static/media/react.4b1a9d5b73ae054e381b.png",
+    "static/media/FeedBack.png": "/vishalportfolio/static/media/FeedBack.b9e43f1793c2847808a6.png",
+    "index.html": "/vishalportfolio/index.html",
+    "main.2a95d31c.css.map": "/vishalportfolio/static/css/main.2a95d31c.css.map",
+    "main.93cb4241.js.map": "/vishalportfolio/static/js/main.93cb4241.js.map",
+    "787.29038737.chunk.js.map": "/vishalportfolio/static/js/787.29038737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.54ded6ac.css",
-    "static/js/main.64053620.js"
+    "static/css/main.2a95d31c.css",
+    "static/js/main.93cb4241.js"
   ]
 }
