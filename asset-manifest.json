@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/vishalportfolio/static/css/main.2a95d31c.css",
-    "main.js": "/vishalportfolio/static/js/main.93cb4241.js",
+    "main.css": "/vishalportfolio/static/css/main.ee7f600a.css",
+    "main.js": "/vishalportfolio/static/js/main.ee265ca7.js",
     "static/js/787.29038737.chunk.js": "/vishalportfolio/static/js/787.29038737.chunk.js",
     "static/media/homeBg.jpg": "/vishalportfolio/static/media/homeBg.81b3febc4d2b835a2685.jpg",
     "static/media/Ecommerce.png": "/vishalportfolio/static/media/Ecommerce.cf5e5ca54b9e5c62fb80.png",
     "static/media/Login.png": "/vishalportfolio/static/media/Login.bd9ec2283fef16883c83.png",
+    "static/media/aboutUsVishal.png": "/vishalportfolio/static/media/aboutUsVishal.885aa715b73d8b70abcf.png",
     "static/media/AllProducts.png": "/vishalportfolio/static/media/AllProducts.8c34c40d2d9ea3304986.png",
     "static/media/vishalGupta.png": "/vishalportfolio/static/media/vishalGupta.c5026be2c20478cafd8b.png",
     "static/media/Educational.png": "/vishalportfolio/static/media/Educational.b6198ccea9d6b0110d9c.png",
@@ -15,14 +16,15 @@
     "static/media/boostrap.png": "/vishalportfolio/static/media/boostrap.6fda956b350aea84d197.png",
     "static/media/greenStrip.png": "/vishalportfolio/static/media/greenStrip.3a468f4cd49dd38debe7.png",
     "static/media/react.png": "/vishalportfolio/static/media/react.4b1a9d5b73ae054e381b.png",
+    "static/media/bottomRound.png": "/vishalportfolio/static/media/bottomRound.0d1da7f4d1a8de570b7e.png",
     "static/media/FeedBack.png": "/vishalportfolio/static/media/FeedBack.b9e43f1793c2847808a6.png",
     "index.html": "/vishalportfolio/index.html",
-    "main.2a95d31c.css.map": "/vishalportfolio/static/css/main.2a95d31c.css.map",
-    "main.93cb4241.js.map": "/vishalportfolio/static/js/main.93cb4241.js.map",
+    "main.ee7f600a.css.map": "/vishalportfolio/static/css/main.ee7f600a.css.map",
+    "main.ee265ca7.js.map": "/vishalportfolio/static/js/main.ee265ca7.js.map",
     "787.29038737.chunk.js.map": "/vishalportfolio/static/js/787.29038737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a95d31c.css",
-    "static/js/main.93cb4241.js"
+    "static/css/main.ee7f600a.css",
+    "static/js/main.ee265ca7.js"
   ]
 }
