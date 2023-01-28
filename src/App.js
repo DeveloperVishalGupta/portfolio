@@ -19,6 +19,7 @@ import Resume from "./components/Resume";
 import FeedBack from "./components/FeedBack";
 import ConnectUs from "./components/ConnectUs";
 import NewComponent from "./Component/NewComponent";
+import PorjectCard from "./components/PorjectCard";
 import Footer from "./components/Footer";
 
 import AboutMe from "./components/AboutMe";
@@ -28,7 +29,7 @@ import greenStrip from './images/greenStrip.png';
 import VishalGupta from './images/vishalGupta.png';
 import webDev from './images/webdevelopemnet.jpg';
 import webdev2 from './images/Development.webp';
-import websiteSS1 from './images/ss/AllProducts.png';
+import carvarsal from './images/car.png';
 import websiteSS2 from './images/ss/Ecommerce.png';
 import websiteSS3 from './images/ss/Educational.png';
 import websiteSS4 from './images/ss/Login.png';
@@ -66,6 +67,7 @@ function App() {
         <>
             {/*<Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />*/}
             {/*<NewComponent/>*/}
+
             {/*<Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}*/}
             {/*    Github={faGithub} linkedIn={faLinkedinIn} />*/}
             {/*<ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />*/}
@@ -75,15 +77,17 @@ function App() {
             {/*<FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />*/}
             {/*<ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>*/}
             <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />
+
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
                   Github={faGithub} linkedIn={faLinkedinIn} />
             <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
-            <MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
+            <MyFortfolio carvarsalCover={carvarsal} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
                     css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
             <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
             <Footer/>
+            {/*<PorjectCard/>*/}
         </>
 
     );
