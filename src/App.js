@@ -21,6 +21,8 @@ import ConnectUs from "./components/ConnectUs";
 import NewComponent from "./Component/NewComponent";
 import PorjectCard from "./components/PorjectCard";
 import Footer from "./components/Footer";
+// import CRUD from './Component/CRUD'
+import BasicExample from "./Component/BasicExample";
 
 import AboutMe from "./components/AboutMe";
 
@@ -87,6 +89,7 @@ function App() {
             <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
             <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
             <Footer/>
+            <BasicExample/>
             {/*<PorjectCard/>*/}
         </>
 
