@@ -1,14 +1,21 @@
 import React from "react";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faBars} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+// import { BrowserRouter, Route, Router } from "react-router-dom";
+
 
 export default function Header(props) {
     return (
         <>
+            {/* <BrowserRouter>
+                <Router>
+                    <Route />
+                </Router>
+            </BrowserRouter> */}
             <div className="container-fluid px-0">
                 <div className="themeBlueBg d-flex align-items-center">
                     <a href="./">
-                        <div className="navyBorder Centerflex" style={{width: "80px", height: "80px"}}>
+                        <div className="navyBorder Centerflex" style={{ width: "80px", height: "80px" }}>
                             <h1 className='playfairFont mb-0 italicBold text-white'>V<span className='logoStyle'>G</span>
                             </h1>
                         </div>
@@ -34,16 +41,16 @@ export default function Header(props) {
                         </ul>
 
                     </div>
-                    <div className="navyBorder Centerflex ms-auto" style={{width: "80px", height: "80px"}}>
+                    <div className="navyBorder Centerflex ms-auto" style={{ width: "80px", height: "80px" }}>
                         {/*<h1 className='playfairFont mb-0 italicBold text-white'>V<span className='logoStyle'>G</span></h1>*/}
                         <div className="text-white">
-                            <FontAwesomeIcon icon={props.cart} size='2xl'/>
+                            <FontAwesomeIcon icon={props.cart} size='2xl' />
                             <sup className="badge cartBadge">9</sup>
                         </div>
                     </div>
-                    <div className="navyBorder Centerflex" style={{width: "80px", height: "80px"}}>
+                    <div className="navyBorder Centerflex" style={{ width: "80px", height: "80px" }}>
                         {/*<h1 className='playfairFont mb-0 italicBold text-white'>V<span className='logoStyle'>G</span></h1>*/}
-                        <FontAwesomeIcon className='text-white' icon={faBars} size='2xl'/>
+                        <FontAwesomeIcon className='text-white' icon={faBars} size='2xl' />
                     </div>
 
                 </div>

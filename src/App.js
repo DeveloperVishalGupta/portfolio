@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 // import css
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -8,23 +7,13 @@ import './App.css';
 // import component 
 import Home from './components/Home.js';
 import Header from './components/Header.js';
-// import ServicesPage from "./components/ServicesPage";
-// import MyFortfolio from "./components/MyPortfolio";
-// import Resume from "./components/Resume";
-// import FeedBack from "./components/FeedBack";
-// import ConnectUs from "./components/ConnectUs";
 import ServicesPage from "./components/ServicesPage";
 import MyFortfolio from "./components/MyPortfolio";
 import Resume from "./components/Resume";
 import FeedBack from "./components/FeedBack";
 import ConnectUs from "./components/ConnectUs";
-import NewComponent from "./Component/NewComponent";
-import PorjectCard from "./components/PorjectCard";
 import Footer from "./components/Footer";
-// import CRUD from './Component/CRUD'
-import BasicExample from "./Component/BasicExample";
 
-import AboutMe from "./components/AboutMe";
 
 // import images 
 import greenStrip from './images/greenStrip.png';
@@ -43,11 +32,7 @@ import wordpressIcon from './iconImages/wordpress.png';
 import bootstrapIcon from './iconImages/boostrap.png';
 import Quote from './images/quate.png';
 import QuoteImage from './images/quateImage.png';
-import FeedbackImage from './images/FeedBack.png';
 
-
-// import icons
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faEllipsisVertical,
     faMagnifyingGlass,
@@ -67,33 +52,17 @@ const ConnectUsHeadingLine2 = '';
 function App() {
     return (
         <>
-            {/*<Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />*/}
-            {/*<NewComponent/>*/}
-
-            {/*<Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}*/}
-            {/*    Github={faGithub} linkedIn={faLinkedinIn} />*/}
-            {/*<ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />*/}
-            {/*<MyFortfolio ss1={websiteSS1} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />*/}
-            {/*<Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}*/}
-            {/*    css={cssIcon} />*/}
-            {/*<FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />*/}
-            {/*<ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>*/}
             <Header moreMenu={faEllipsisVertical} search={faMagnifyingGlass} cart={faCartShopping} />
-
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
-                  Github={faGithub} linkedIn={faLinkedinIn} />
+                Github={faGithub} linkedIn={faLinkedinIn} />
             <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
             <MyFortfolio carvarsalCover={carvarsal} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
-                    css={cssIcon} />
-            <FeedBack image={QuoteImage} quoteIcon={Quote} feedbackImage={FeedbackImage} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
-            <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2}/>
-            <Footer/>
-            <BasicExample/>
-            {/*<PorjectCard/>*/}
+                css={cssIcon} />
+            <FeedBack image={QuoteImage} quoteIcon={Quote} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
+            <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2} />
+            <Footer />
         </>
-
     );
 }
-
 export default App;
