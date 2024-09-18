@@ -126,7 +126,9 @@ sup{
 
 /*========================================== ./header Css ============================================*/
 /*========================================== homepage  Css ============================================*/
-
+.nameIntro{
+  height: 100%;
+}
 .portfolioBgImage{
   background-image: url('./images/homeBg.jpg');
   background-position: center;
@@ -148,10 +150,8 @@ sup{
   background-position: right 14% top 0%;
 
 }
-/* .userImage{
-  background: url("./images/fullScreenImage.png") no-repeat ;
-  background-position: right 14% top 0%;
-} */
+
+
 /*========================================== ./homepage  Css ============================================*/
 /*========================================== sidenavigator  Css ============================================*/
 
@@ -180,17 +180,7 @@ sup{
 /*========================================== ./ServicePage Css ============================================*/
 /*========================================== MyPortfolio Css ============================================*/
 
-.site1BgImage{
-  background-image: url("./images/ss/AllProducts.png");
-  background-size: contain;
-}
 
-.innerImage{
-  /*background-image: url("./images/ss/AllProducts.png");*/
-  /*height: 245px;*/
-  /*background-size: contain;*/
-  /*background-repeat: round;*/
-}
 .innerImage:hover{
   opacity: .3;
 }
@@ -205,13 +195,14 @@ sup{
 display: none;
 }
 
-
 .orbitImage{
   animation: circle 10s linear infinite;
 }
+
   /*========================================== ./MyPortfolio Css ============================================*/
   /*========================================== animation Css ============================================*/
-@keyframes circle{
+
+  @keyframes circle{
 0%{
   transform:rotate(0deg)
 }
@@ -236,7 +227,6 @@ display: none;
   position: relative;
   width: 350px;
   height: 350px;
-  /* background-color: #333; */
   box-shadow: inset 20px 20px 20px rgba(0,0,0,0.05), 25px 35px 20px rgba(0,0,0,0.05), 25px 30px 30px rgba(0,0,0,0.05), inset -20px -20px 25px rgba(255, 255, 255, 0.9);
 }
 .SkillCard .drop:nth-child(1){
@@ -418,7 +408,6 @@ input#EmailId, input#FirstName:focus, input#LastName:focus, textarea#Message:foc
   position: relative;
   width: 350px;
   height: 180px;
-  background: #33;
   transition: .3s;
 }
 .projectCard:hover{
@@ -557,16 +546,15 @@ position: absolute;
   }
 }
 
-
-/*.projectBorderLine{*/
-/*  position: absolute;*/
-/*  inset: 0;*/
-/*  background: black;*/
-/*  overflow: hidden;*/
-/*}*/
 /*----------------------------------------- Media Query ----------------------------------------*/
 
 @media only screen and (max-width: 600px) {
+  .HelloEveryOne{
+    margin-top: 1rem !important;
+  }
+  .nameIntro{
+    height: unset;
+  }
   .HelloEveryOne{
     font-size: 1.7rem !important;
     margin-top: 4rem;
@@ -589,5 +577,8 @@ position: absolute;
   }
   .Portfolio{
     font-size: 2.5rem;
+  }
+  .introSection{
+    height: calc( 100vh - 136px );
   }
 }

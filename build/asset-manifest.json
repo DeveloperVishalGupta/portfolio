@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/vishalportfolio/static/css/main.bf97a2bd.css",
-    "main.js": "/vishalportfolio/static/js/main.8f997d03.js",
+    "main.js": "/vishalportfolio/static/js/main.0a32d0d3.js",
     "static/js/787.29038737.chunk.js": "/vishalportfolio/static/js/787.29038737.chunk.js",
     "static/media/homeBg.jpg": "/vishalportfolio/static/media/homeBg.81b3febc4d2b835a2685.jpg",
     "static/media/fullImage.png": "/vishalportfolio/static/media/fullImage.a023dc5669a4753e872d.png",
@@ -20,14 +20,13 @@
     "static/media/boostrap.png": "/vishalportfolio/static/media/boostrap.6fda956b350aea84d197.png",
     "static/media/greenStrip.png": "/vishalportfolio/static/media/greenStrip.3a468f4cd49dd38debe7.png",
     "static/media/react.png": "/vishalportfolio/static/media/react.4b1a9d5b73ae054e381b.png",
-    "static/media/bottomRound.png": "/vishalportfolio/static/media/bottomRound.0d1da7f4d1a8de570b7e.png",
     "index.html": "/vishalportfolio/index.html",
     "main.bf97a2bd.css.map": "/vishalportfolio/static/css/main.bf97a2bd.css.map",
-    "main.8f997d03.js.map": "/vishalportfolio/static/js/main.8f997d03.js.map",
+    "main.0a32d0d3.js.map": "/vishalportfolio/static/js/main.0a32d0d3.js.map",
     "787.29038737.chunk.js.map": "/vishalportfolio/static/js/787.29038737.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf97a2bd.css",
-    "static/js/main.8f997d03.js"
+    "static/js/main.0a32d0d3.js"
   ]
 }

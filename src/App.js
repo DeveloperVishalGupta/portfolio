@@ -20,10 +20,10 @@ import greenStrip from './images/greenStrip.png';
 import VishalGupta from './images/vishalGupta.png';
 import webDev from './images/webdevelopemnet.jpg';
 import webdev2 from './images/Development.webp';
-import carvarsal from './images/car.png';
-import websiteSS2 from './images/ss/Ecommerce.png';
-import websiteSS3 from './images/ss/Educational.png';
-import websiteSS4 from './images/ss/Login.png';
+// import carvarsal from './images/car.png';
+// import websiteSS2 from './images/ss/Ecommerce.png';
+// import websiteSS3 from './images/ss/Educational.png';
+// import websiteSS4 from './images/ss/Login.png';
 import resumeImage from './images/resumeAnime.png';
 import reactIcon from './iconImages/react.png';
 import htmlIcon from './iconImages/html.png';
@@ -56,7 +56,7 @@ function App() {
             <Home greenStrip={greenStrip} VG={VishalGupta} circelCheck={faCircleCheck} intsaIcon={faInstagram}
                 Github={faGithub} linkedIn={faLinkedinIn} />
             <ServicesPage webdev={webDev} webdev2={webdev2} codeIcon={faLaptopCode} pencilIcon={faPencilSquare} />
-            <MyFortfolio carvarsalCover={carvarsal} ss2={websiteSS2} ss3={websiteSS3} ss4={websiteSS4} />
+            <MyFortfolio />
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
                 css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
