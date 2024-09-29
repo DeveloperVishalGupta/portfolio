@@ -1,32 +1,26 @@
 {
   "files": {
-    "main.css": "/vishalportfolio/static/css/main.bf97a2bd.css",
-    "main.js": "/vishalportfolio/static/js/main.0a32d0d3.js",
+    "main.css": "/vishalportfolio/static/css/main.866465b4.css",
+    "main.js": "/vishalportfolio/static/js/main.0eef4b80.js",
     "static/js/787.29038737.chunk.js": "/vishalportfolio/static/js/787.29038737.chunk.js",
     "static/media/homeBg.jpg": "/vishalportfolio/static/media/homeBg.81b3febc4d2b835a2685.jpg",
     "static/media/fullImage.png": "/vishalportfolio/static/media/fullImage.a023dc5669a4753e872d.png",
     "static/media/vishalGupta.png": "/vishalportfolio/static/media/vishalGupta.58578ec44cac20f9529b.png",
-    "static/media/Ecommerce.png": "/vishalportfolio/static/media/Ecommerce.cf5e5ca54b9e5c62fb80.png",
-    "static/media/Login.png": "/vishalportfolio/static/media/Login.bd9ec2283fef16883c83.png",
-    "static/media/AllProducts.png": "/vishalportfolio/static/media/AllProducts.8c34c40d2d9ea3304986.png",
-    "static/media/Educational.png": "/vishalportfolio/static/media/Educational.b6198ccea9d6b0110d9c.png",
-    "static/media/car.png": "/vishalportfolio/static/media/car.415989a0aa7c7ca71af0.png",
     "static/media/feedBack.png": "/vishalportfolio/static/media/feedBack.224947383850572e6815.png",
     "static/media/Development.webp": "/vishalportfolio/static/media/Development.f1748d630fb4f7b9ce83.webp",
     "static/media/webdevelopemnet.jpg": "/vishalportfolio/static/media/webdevelopemnet.7c8b17ce3b57007ee865.jpg",
-    "static/media/ConnectUs.png": "/vishalportfolio/static/media/ConnectUs.82010991b01970885220.png",
     "static/media/quateImage.png": "/vishalportfolio/static/media/quateImage.3797f402927b53940d56.png",
     "static/media/logobowl.png": "/vishalportfolio/static/media/logobowl.e8621298d4c55a1f30fa.png",
     "static/media/boostrap.png": "/vishalportfolio/static/media/boostrap.6fda956b350aea84d197.png",
     "static/media/greenStrip.png": "/vishalportfolio/static/media/greenStrip.3a468f4cd49dd38debe7.png",
     "static/media/react.png": "/vishalportfolio/static/media/react.4b1a9d5b73ae054e381b.png",
     "index.html": "/vishalportfolio/index.html",
-    "main.bf97a2bd.css.map": "/vishalportfolio/static/css/main.bf97a2bd.css.map",
-    "main.0a32d0d3.js.map": "/vishalportfolio/static/js/main.0a32d0d3.js.map",
+    "main.866465b4.css.map": "/vishalportfolio/static/css/main.866465b4.css.map",
+    "main.0eef4b80.js.map": "/vishalportfolio/static/js/main.0eef4b80.js.map",
     "787.29038737.chunk.js.map": "/vishalportfolio/static/js/787.29038737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf97a2bd.css",
-    "static/js/main.0a32d0d3.js"
+    "static/css/main.866465b4.css",
+    "static/js/main.0eef4b80.js"
   ]
 }
