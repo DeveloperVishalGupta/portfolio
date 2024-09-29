@@ -45,9 +45,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
-// constant text
-const ConnectUsHeadingLine1 = 'Vishal Is every Day here  for you.';
-const ConnectUsHeadingLine2 = '';
 
 function App() {
     return (
@@ -60,7 +57,7 @@ function App() {
             <Resume leftArrow={faCaretLeft} rightArrow={faCaretRight} resumeImage={resumeImage} react={reactIcon} html={htmlIcon} wp={wordpressIcon} bts={bootstrapIcon}
                 css={cssIcon} />
             <FeedBack image={QuoteImage} quoteIcon={Quote} leftArrow={faCaretLeft} rightArrow={faCaretRight} />
-            <ConnectUs HeadingLine1={ConnectUsHeadingLine1} HeadingLine2={ConnectUsHeadingLine2} />
+            <ConnectUs />
             <Footer />
         </>
     );

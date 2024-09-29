@@ -24,6 +24,9 @@
   font-weight: 400;
   font-style: normal;
 }
+/* *{
+  border:1px solid red
+} */
 .themeBlueBg{
   background: var(--themeBlue);
 }
@@ -148,8 +151,13 @@ sup{
 .greenStrip{
   background: url("./images/greenStrip.png") no-repeat ;
   background-position: right 14% top 0%;
-
 }
+
+.selfImage {
+  min-width: 400px !important;
+  max-width: 500px !important;
+}
+
 
 
 /*========================================== ./homepage  Css ============================================*/
@@ -200,6 +208,14 @@ display: none;
 }
 
   /*========================================== ./MyPortfolio Css ============================================*/
+
+  /*========================================== Contact us Css ============================================*/
+.divider{
+  border-bottom: none;
+}
+
+    /*========================================== ./Contact us Css ============================================*/
+
   /*========================================== animation Css ============================================*/
 
   @keyframes circle{
@@ -552,6 +568,9 @@ position: absolute;
   .HelloEveryOne{
     margin-top: 1rem !important;
   }
+  .divider{
+    border-bottom: 2px solid;
+  }
   .nameIntro{
     height: unset;
   }
@@ -580,5 +599,9 @@ position: absolute;
   }
   .introSection{
     height: calc( 100vh - 136px );
+  }
+  .selfImage{
+    min-Width: unset !important
+    /* max-Width: '500px' */
   }
 }
