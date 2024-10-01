@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vishalportfolio/static/css/main.866465b4.css",
-    "main.js": "/vishalportfolio/static/js/main.9f3b81cf.js",
+    "main.css": "/vishalportfolio/static/css/main.11e3daaa.css",
+    "main.js": "/vishalportfolio/static/js/main.e20de777.js",
     "static/js/787.29038737.chunk.js": "/vishalportfolio/static/js/787.29038737.chunk.js",
     "static/media/homeBg.jpg": "/vishalportfolio/static/media/homeBg.81b3febc4d2b835a2685.jpg",
     "static/media/fullImage.png": "/vishalportfolio/static/media/fullImage.a023dc5669a4753e872d.png",
@@ -10,17 +10,18 @@
     "static/media/Development.webp": "/vishalportfolio/static/media/Development.f1748d630fb4f7b9ce83.webp",
     "static/media/webdevelopemnet.jpg": "/vishalportfolio/static/media/webdevelopemnet.7c8b17ce3b57007ee865.jpg",
     "static/media/quateImage.png": "/vishalportfolio/static/media/quateImage.3797f402927b53940d56.png",
+    "static/media/Vishal-Gupta-Resume.pdf": "/vishalportfolio/static/media/Vishal-Gupta-Resume.60fc2ea1495dbef41c88.pdf",
     "static/media/logobowl.png": "/vishalportfolio/static/media/logobowl.e8621298d4c55a1f30fa.png",
     "static/media/boostrap.png": "/vishalportfolio/static/media/boostrap.6fda956b350aea84d197.png",
     "static/media/greenStrip.png": "/vishalportfolio/static/media/greenStrip.3a468f4cd49dd38debe7.png",
     "static/media/react.png": "/vishalportfolio/static/media/react.4b1a9d5b73ae054e381b.png",
     "index.html": "/vishalportfolio/index.html",
-    "main.866465b4.css.map": "/vishalportfolio/static/css/main.866465b4.css.map",
-    "main.9f3b81cf.js.map": "/vishalportfolio/static/js/main.9f3b81cf.js.map",
+    "main.11e3daaa.css.map": "/vishalportfolio/static/css/main.11e3daaa.css.map",
+    "main.e20de777.js.map": "/vishalportfolio/static/js/main.e20de777.js.map",
     "787.29038737.chunk.js.map": "/vishalportfolio/static/js/787.29038737.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.866465b4.css",
-    "static/js/main.9f3b81cf.js"
+    "static/css/main.11e3daaa.css",
+    "static/js/main.e20de777.js"
   ]
 }
