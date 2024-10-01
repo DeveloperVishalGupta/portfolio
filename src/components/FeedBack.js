@@ -29,26 +29,30 @@ export default function FeedBack(props) {
     }];
 
     const feedbackHtml = feedbackArray.map((value, index) => {
-        return <div className="item" key={index}>
-            <div className="row align-items-center position-relative ">
-                <div className="col-md-5">
-                    <img src={feedBack} className='w-100' alt="" />
-                </div>
-                <div className="col-md-7">
-                    <h3 className='playfairFont' style={{ lineHeight: '1.3', wordSpacing: '3px', letterSpacing: '1px' }}>
-                        {value.fb}</h3>
-                    <h6 className='mt-4'>- {value.clientName}</h6>
-                </div>
-                <img src={props.feedbackImage} alt='' className='w-50 position-absolute' style={{ right: '5%', bottom: '5%' }} />
-            </div>
+        return <div key={index}>
+            <h3 className='playfairFont' style={{ lineHeight: '1.3', wordSpacing: '3px', letterSpacing: '1px' }}>
+                {value.fb}</h3>
+            <h6 className='mt-4'>- {value.clientName}</h6>
         </div>
     })
     return (
         <>
-            <div className="container-fluid d-flex darknavyBg flex-column justify-content-around text-white" style={{ minHeight: '100vh' }}>
-                <OwlCarousel {...options} autoplay='true' loop nav >
-                    {feedbackHtml}
-                </OwlCarousel>
+            <div className="container-fluid d-flex darknavyBg flex-column justify-content-around text-white" id="FeedBack" style={{ minHeight: '100vh' }}>
+                <h1 className='mb-5 playfairFont pt-2 text-center text-white Portfolio'><b>My Portfolio</b></h1>
+                <div className="item" >
+                    <div className="row align-items-center position-relative ">
+                        <div className="col-md-5">
+                            <img src={feedBack} className='w-100' alt="" />
+                        </div>
+                        <div className="col-md-7">
+                            <OwlCarousel {...options} autoplay='true' loop nav >
+                                {feedbackHtml}
+                            </OwlCarousel>
+
+                        </div>
+                        <img src={props.feedbackImage} alt='' className='w-50 position-absolute' style={{ right: '5%', bottom: '5%' }} />
+                    </div>
+                </div>
 
             </div>
 

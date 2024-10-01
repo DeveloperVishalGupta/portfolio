@@ -52,7 +52,7 @@ export default function MyFortfolio(props) {
     })
     return (
         <>
-            <div className="container-fluid " style={{ backgroundColor: '#272b44' }}>
+            <div className="container-fluid " id="MyWorks" style={{ backgroundColor: '#272b44' }}>
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <h2 className='greenColor pb-2 pt-5 rubicFont text-capitalize text-center'>latest work</h2>

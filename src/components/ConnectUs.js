@@ -100,7 +100,7 @@ export default function ConnectUs() {
     })
     return (
         <>
-            <div className="container-fluid text-white border" style={{ background: 'rgb(39, 43, 68)' }}>
+            <div className="container-fluid text-white" style={{ background: 'rgb(39, 43, 68)' }} id="contactSection">
                 <div className="row mx-0">
                     <div className="col-md-12">
                         <div className=" justify-content-center mb-2 mx-md-4 row">
@@ -121,8 +121,8 @@ export default function ConnectUs() {
             <div className="container-fluid py-5 " style={{ backgroundColor: 'rgb(39, 43, 68)' }}>
                 <div className="row justify-content-center mx-0">
                     <div className="col-md-10">
-                        <div className="row">
-                            <div className="col-md-7">
+                        <div className="justify-content-around row">
+                            <div className="bg-gradient border col-md-7 p-5 rounded-4" >
                                 <Form noValidate validated={validated}>
                                     {/* first name  */}
                                     <div>
@@ -198,9 +198,9 @@ export default function ConnectUs() {
                                 </Form>
 
                             </div>
-                            <div className="col-md-5">
+                            {/* <div className="col-md-5">
                                 <img className="w-100" src={ConnectUs} alt="" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

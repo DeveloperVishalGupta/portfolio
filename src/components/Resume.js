@@ -61,7 +61,7 @@ export default function Resume(props) {
     })
     return (
         <>
-            <div className="container-fluid " style={{ color: '#eff0f4' }}>
+            <div className="container-fluid " id="Skills" style={{ color: '#eff0f4', minHeight: '100vh' }}>
                 <div className="row justify-content-center">
                     <div className="col-md-12">
                         <h2 className='greenColor pb-2 pt-5 rubicFont text-capitalize text-center'>SKILL &
