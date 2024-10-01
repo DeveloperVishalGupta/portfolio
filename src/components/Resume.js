@@ -4,6 +4,8 @@ import Table from 'react-bootstrap/Table';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Button } from "bootstrap";
+import vishalGuptaResume from '../file/Vishal-Gupta-Resume.pdf'
 
 
 export default function Resume(props) {
@@ -86,6 +88,19 @@ export default function Resume(props) {
                         </div>
                     </div>
                 </div>
+                <div className="border border-3 mb-4 mx-auto p-4 rounded-4 shadow-lg w-75">
+                    <h1 className='playfairFont themeBlueText'><b> My Resume</b></h1>
+                    <div className="text-end w-100">
+                        <a className="border btn me-3 resumeOptions" href={vishalGuptaResume} download>
+                            Download Resume
+                        </a>
+                        <a className="border btn resumeOptions" href={vishalGuptaResume} target="_">
+                            View Resume
+                        </a>
+                    </div>
+
+                </div>
+
             </div>
         </>
     )
