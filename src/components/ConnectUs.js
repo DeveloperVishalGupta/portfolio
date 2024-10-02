@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import callIconImage from '../images/callOnImage.png';
 import emailIconImage from '../images/Email.png';
 import axios from "axios";
-import { Button, Form } from "react-bootstrap";
-import Toaster from "../Component/Toster";
+import { Button, Form, } from "react-bootstrap";
 
 export default function ConnectUs() {
+
     const [formData, setFormData] = useState({
         firstName: null,
         lastName: null,
@@ -13,9 +13,6 @@ export default function ConnectUs() {
         email: null,
         message: null
     });
-    const [validated, setValidated] = useState(false);
-
-
 
     const handleChange = (e) => {
         console.log(e.nativeEvent.data);
@@ -27,13 +24,10 @@ export default function ConnectUs() {
     };
 
     const handleSubmit = async () => {
-        console.log(formData);
-        console.log('now call api');
-        setValidated(true);
+
         if (formData?.email && formData?.firstName && formData?.message) {
             try {
                 await axios.post('/api/v1/e84tze3dtkpm6', { data: formData });  // Replace with your SheetDB URL
-                <Toaster />
                 setFormData({
                     firstName: null,
                     lastName: null,
@@ -46,6 +40,16 @@ export default function ConnectUs() {
                 console.error('Error submitting form:', error);
             }
         }
+        //else {
+        //     if (!formData?.email) {
+        //         setmodelMessage({ error: true, message: 'please fill the Email Address' })
+        //     } else if (!formData?.firstName) {
+        //         setmodelMessage({ error: true, message: 'please fill the Name' })
+        //     } else {
+        //         setmodelMessage({ error: true, message: 'please fill the Message' })
+        //     }
+        //     handleShow()
+        // }
     };
 
     const connectArray = [{ image: callIconImage, ContactName: 'Call Us.', ConnectAT: 'tel:+91 9320206598', ConnectWith: '+91 9320206598' },
@@ -123,7 +127,7 @@ export default function ConnectUs() {
                     <div className="col-md-10">
                         <div className="justify-content-around row">
                             <div className="bg-gradient border col-md-7 p-5 rounded-4" >
-                                <Form noValidate validated={validated}>
+                                <Form>
                                     {/* first name  */}
                                     <div>
                                         <Form.Label className="text-white small">First Name</Form.Label>
@@ -196,11 +200,7 @@ export default function ConnectUs() {
                                         onClick={() => { handleSubmit() }}
                                     >Submit</Button>
                                 </Form>
-
                             </div>
-                            {/* <div className="col-md-5">
-                                <img className="w-100" src={ConnectUs} alt="" />
-                            </div> */}
                         </div>
                     </div>
 

@@ -21,24 +21,24 @@ export default function FeedBack(props) {
     };
     const feedbackArray = [{
         fb: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout The point.',
-        clientName: 'Vishal Gupta'
+        // clientName: 'Vishal Gupta'
     },
     {
         fb: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected',
-        clientName: 'Abhishek Gupta'
+        // clientName: 'Abhishek Gupta'
     }];
 
     const feedbackHtml = feedbackArray.map((value, index) => {
         return <div key={index}>
             <h3 className='playfairFont' style={{ lineHeight: '1.3', wordSpacing: '3px', letterSpacing: '1px' }}>
                 {value.fb}</h3>
-            <h6 className='mt-4'>- {value.clientName}</h6>
+            <h6 className='mt-4'> {value.clientName}</h6>
         </div>
     })
     return (
         <>
             <div className="container-fluid d-flex darknavyBg flex-column justify-content-around text-white" id="FeedBack" style={{ minHeight: '100vh' }}>
-                <h1 className='mb-5 playfairFont pt-2 text-center text-white Portfolio'><b>My Portfolio</b></h1>
+                <h1 className='mb-5 playfairFont pt-2 text-center text-white Portfolio'><b>Reviews</b></h1>
                 <div className="item" >
                     <div className="row align-items-center position-relative ">
                         <div className="col-md-5">

@@ -28,7 +28,7 @@ export default function ServicesPage(props) {
     })
     return (
         <>
-            <div className="align-items-center container-fluid d-flex darknavyBg text-white" id="About" style={{ minHeight: '90vh' }}>
+            <div className="align-items-center container-fluid d-flex darknavyBg text-white" id="About" style={{ minHeight: '100vh' }}>
                 <div className="row text-center justify-content-center rubicFont">
                     <div className="col-12">
                         <div className="">

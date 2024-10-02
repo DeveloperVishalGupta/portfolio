@@ -92,7 +92,7 @@ a{
 }
 .ellipsis3 {
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  line-clamp: 3; /* Limit to 3 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -133,7 +133,6 @@ sup{
   height: 100%;
 }
 .portfolioBgImage{
-  background-image: url('./images/homeBg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,6 +186,10 @@ sup{
 
 /*========================================== ./ServicePage Css ============================================*/
 /*========================================== MyPortfolio Css ============================================*/
+
+.showResume{
+  width: 75%;
+}
 
 .resumeOptions:hover{
   color:#08d565;
@@ -294,13 +297,13 @@ display: none;
   flex-direction: column;
   text-align: center;
   padding: 40px;
-  gap :15px;
+  gap :12px;
 
 }
 .cartHeading{
   position: relative;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
   background: #eff0f4;
   border-radius: 50%;
   box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.01), inset -2px -5px 10px rgba(255, 255, 255, 1), 15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.025);
@@ -567,6 +570,9 @@ position: absolute;
 /*----------------------------------------- Media Query ----------------------------------------*/
 
 @media only screen and (max-width: 600px) {
+  .showResume{
+    width: 100%;
+  }
   .HelloEveryOne{
     margin-top: 1rem !important;
   }

@@ -1,14 +1,22 @@
 import React from "react";
 import Table from 'react-bootstrap/Table';
-
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-import { Button } from "bootstrap";
 import vishalGuptaResume from '../file/Vishal-Gupta-Resume.pdf'
+import reactJs from '../svg/react-2.svg'
+import figma from '../svg/figma-icon.svg'
+import github from '../svg/github-2.svg'
+import nodejs from '../svg/nodejs-1.svg'
+import nextjs from '../svg/nextjs-2.svg'
+import bootstrap5 from '../svg/bootstrap-5-1.svg'
+import html from '../svg/html-1.svg'
+import css from '../svg/css-3.svg'
+import javascript from '../svg/javascript-1.svg'
+import tailwindcss from '../svg/tailwindcss.svg'
 
 
-export default function Resume(props) {
+export default function Resume() {
     const options = {
         responsive: {
             0: {
@@ -18,16 +26,22 @@ export default function Resume(props) {
                 items: 1
             },
             1000: {
-                items: 2
+                items: 3
             }
         },
     };
     const OwlCarouselData = [
-        { image: props.react, Knowledge: '60%', shoetDetail: '', Link: '' },
-        { image: props.html, Knowledge: '60%', shoetDetail: '', Link: '' },
-        { image: props.css, Knowledge: '60%', shoetDetail: '', Link: '' },
-        { image: props.wp, Knowledge: '60%', shoetDetail: '', Link: '' },
-        { image: props.bts, Knowledge: '60%', shoetDetail: '', Link: '' },
+        { image: reactJs },
+        { image: figma },
+        { image: github },
+        { image: nodejs },
+        { image: nextjs },
+        { image: bootstrap5 },
+        { image: html },
+        { image: css },
+        { image: javascript },
+        { image: tailwindcss },
+
     ]
     const post = [
         { year: 2023, designnation: 'Frontend Ninja', Company: 'TAILWND-Flow Learning Solutions LLP' },
@@ -48,16 +62,13 @@ export default function Resume(props) {
     const OwlCarouselDataHTML = OwlCarouselData.map((value, index) => {
         return <div className='item' key={index}>
             <div className="SkillCard">
-                <div className="drop" style={{ color: '#ff0f5b' }}>
-                    <div className="content">
-                        <div className="cartHeading">
-                            <img src={value.image} className='' style={{ height: '60%', width: 'auto' }} alt="" />
-                        </div>
-                        <p className='mb-0'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Consequatur, ipsa.।</p>
-                        <a href="./" className="readMoreLink">Read more..</a>
+                <div className="content">
+                    <div className="cartHeading">
+                        <img src={value.image} className='' style={{ width: '100px' }} alt="" />
                     </div>
+
                 </div>
+
             </div>
         </div>
     })
@@ -68,7 +79,6 @@ export default function Resume(props) {
                     <div className="col-md-12">
                         <h2 className='greenColor pb-2 pt-5 rubicFont text-capitalize text-center'>SKILL &
                             EXPERIENCE</h2>
-                        <h1 className='playfairFont text-center themeBlueText'><b>My Resume</b></h1>
                         <div className="align-items-center row">
                             <div className="col-md-8">
                                 <OwlCarousel nav='false' dots='false' autoplay='true' loop className='SkillCardCarousel' {...options}>
@@ -76,31 +86,26 @@ export default function Resume(props) {
                                 </OwlCarousel>
                             </div>
                             <div className="col-md-4 text-white">
-
                                 <Table borderless className='playfairFont' style={{ color: "white" }}>
-
                                     <tbody className='text-dark'>
                                         {designnationList}
                                     </tbody>
                                 </Table>
-
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="border border-3 mb-4 mx-auto p-4 rounded-4 shadow-lg w-75">
-                    <h1 className='playfairFont themeBlueText'><b> My Resume</b></h1>
+                <div className="border border-3 mb-4 mx-auto p-4 rounded-4 shadow-lg showResume">
+                    <h1 className='playfairFont themeBlueText mb-3'><b> My Resume</b></h1>
                     <div className="text-end w-100">
-                        <a className="border btn me-3 resumeOptions" href={vishalGuptaResume} download>
+                        <a className="border btn me-4 resumeOptions" href={vishalGuptaResume} download>
                             Download Resume
                         </a>
                         <a className="border btn resumeOptions" href={vishalGuptaResume} target="_">
                             View Resume
                         </a>
                     </div>
-
                 </div>
-
             </div>
         </>
     )
